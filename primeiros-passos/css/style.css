@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Glock & family= Krona+One & family= Oswald:wght@300 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Oswald&display=swap');
 
 * {
     margin: 0;
@@ -39,5 +39,30 @@ body {
 
 .apresentacao__conteudo__paragrafo {
     font-size: 24px;
-    font-family: 'Gloock', serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+.apresentacao__links__principais {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.apresentacao__links__alternativos {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    background-color: #003049;
+    color: #d62828;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 21.5px 0px;
 }
