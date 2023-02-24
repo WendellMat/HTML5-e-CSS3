@@ -8,7 +8,7 @@
 body {
     background-color: #eae2b7;
     color: #003049;
-    height: 100vh;
+    max-height: 100vh;
     box-sizing: border-box;
     width: 100%;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .apresentacao {
-    margin: 10% 15%;
+    margin: 8% 15%;
     display: flex;
     align-items: center;
     justify-content: space-AROUND;
@@ -74,20 +74,48 @@ a {
 }
 
 a:hover {
-    font-size: 28px;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.linkedin:hover {
+a:active {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.linkedin:hover{
     background-color: #0a66c2;
     color: #fff;
+    transition:all 0.3s ease;
+}
+
+.linkedin:hover .icone{
+    display: inline!important;
 }
 
 .github:hover {
     background-color: #000;
     color: #fff;
+    transition:all 0.3s ease;
+}
+
+.github:hover .icone{
+    display: inline!important;
 }
 
 .instagram:hover {
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
     color: #fff;
+    transition:all 0.3s ease;
+}
+
+.instagram:hover .icone{
+    display: inline!important;
+}
+
+.icone {
+    display: none!important;
+    margin-right: 4px;
 }
