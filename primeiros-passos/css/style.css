@@ -19,17 +19,23 @@ body {
 
 .perfil {
     width: 500px;
+    border: 5px solid #d62828;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .apresentacao {
-    margin: 10%;
+    margin: 10% 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-AROUND;
 }
 
 .apresentacao__conteudo {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
@@ -42,16 +48,16 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-.apresentacao__links__principais {
+.apresentacao__links__principais, .apresentacao__links__alternativos {
     font-family: 'Montserrat', sans-serif;
     display: flex;
+}
+
+.apresentacao__links__principais {
     justify-content: space-between;
-    margin: 20px 0px;
 }
 
 .apresentacao__links__alternativos {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
     justify-content: center;
 }
 
@@ -65,4 +71,23 @@ a {
     font-weight: 600;
     text-decoration: none;
     padding: 21.5px 0px;
+}
+
+a:hover {
+    font-size: 28px;
+}
+
+.linkedin:hover {
+    background-color: #0a66c2;
+    color: #fff;
+}
+
+.github:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.instagram:hover {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: #fff;
 }
