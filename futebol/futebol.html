@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function pulalinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+        }
+
+        var vitorias = parseInt(prompt("Quantas vitórias seu time possui?"));
+        var empates = parseInt(prompt("Quantos empates seu time possui?"));
+        var pontos = (vitorias * 3) + empates;
+
+        mostra ("Olá, a pontuação do seu time foi " + pontos + " pontos");
+
+    </script>
+
+</body>
+</html>
