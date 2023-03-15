@@ -29,6 +29,18 @@
         mostra ("Olá " + nome);
         mostra ("O seu IMC é " + Math.round(imc));
 
+        if (imc < 18.5) {
+            mostra("Você está abaixo do recomendado");
+        }
+        if (imc > 35) {
+            mostra("Você está acima do recomendado");
+        }
+        if (imc >= 18.5) {
+            if (imc <= 35) {
+                mostra("Você está no peso ideal");
+            }
+        }
+
     </script>
 </body>
 </html>
