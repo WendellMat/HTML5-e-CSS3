@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 2</title>
+</head>
+<body>
+    
+    <script>
+
+        function pulalinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+        }
+
+        function sorteio(n) {
+            return Math.round(Math.random() * n);
+        }
+
+        var aleatorio = sorteio(5);
+        var chute = parseInt(prompt("Digite um número que você pensa ser o correto"));
+
+        if (chute == aleatorio){
+            mostra("Parabéns, você acertou! O número escolhido foi " + aleatorio);
+        } else {
+            if (chute > aleatorio){
+                mostra("Seu chute foi maior que o número escolhido")
+            } else {
+                mostra("Seu chute foi menor que o número escolhido")
+            }
+        }
+
+    </script>
+
+</body>
+</html>
